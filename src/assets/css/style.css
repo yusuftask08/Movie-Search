@@ -7358,4 +7358,8 @@ del {
 .switch-wrap {
     margin-bottom: 10px;
 }
+.card {
+    margin-right: 20px !important;
+    background-color: #825aaa3b;
+}
 
