@@ -1,19 +1,22 @@
 <template>
-  
-   <search />
-   <cards/>
-  
+   <appSearchBar />
+   <appCards :movieList="movieList"/>
 </template>
-
 <script>
 // @ is an alias to /src
-import search from '@/components/search';
-import cards from '@/components/cards';
+import appSearchBar from '@/components/appSearchBar';
+import appCards from '@/components/appCards';
+import { mapGetters } from "vuex";
 
 export default {
-  name: 'Home',
   components: {
-    search,cards
-  }
+    appSearchBar,
+    appCards
+  },
+  computed : {
+      ...mapGetters({
+          movieList :"movieItemList",
+      })
+    }
 }
 </script>

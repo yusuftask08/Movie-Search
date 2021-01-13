@@ -1,15 +1,15 @@
 <template>
   <div>
-   <navBar />
-
+   <appHeader />
     <router-view> </router-view>
   </div>
 </template>
 <script>
-import navBar from '@/components/navBar';
+import appHeader from '@/components/appHeader';
+import axios from "axios";
 export default {
     components : {
-        navBar,
+        appHeader,
     }
 };
 </script>
