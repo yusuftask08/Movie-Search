@@ -29,8 +29,8 @@
             <p> {{ movie.Type }}<br> <i class="fas fa-thumbs-up"></i> </p>
           </div>
           <div class="product-price-btn">
-            <a :href="`https://www.imdb.com/title/${movie.imdbID}/`" target="_blank"><p><span></span>IMDB</p></a>
-            <button @click="addToFavorites" :class="favoriteClasses" type="button">Favorilerime Ekle</button>
+            <a class="mr-5" :href="`https://www.imdb.com/title/${movie.imdbID}/`" target="_blank"><p><span></span>IMDB</p></a>
+            <button class="ms-10" @click="addToFavorites" :class="favoriteClasses" type="button">Favorilerime Ekle</button>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@ body {
   font-family: 'Playfair Display', serif;
   color: #8d8d8d;
   line-height: 1.7em;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: lighter;
   overflow: hidden;
 }
@@ -168,7 +168,7 @@ span {
   display: inline-block;
   height: 50px;
   width: 176px;
-  margin: 0 40px 0 16px;
+  /* margin: 10px 40px 10px 16px; */
   box-sizing: border-box;
   border: transparent;
   border-radius: 60px;
@@ -181,6 +181,7 @@ span {
   background-color: #9cebd5;
   cursor: pointer;
   outline: none;
+  margin-right: 5px;
 }
 
 .product-price-btn button:hover {
